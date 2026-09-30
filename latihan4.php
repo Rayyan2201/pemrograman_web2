@@ -1,58 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Penggunaan Switch - Case</title>
-</head>
-<body>
+<HTML>
+<HEAD>
+    <TITLE>Penggunaan Is Array</TITLE>
+</HEAD>
 
-<h2>Hari ini:</h2>
+<BODY>
 
 <?php
+$var = array(1, 2, 3, 4, 5, 6, 7);
 
-$nama_hari = date("l");
+$scan = is_array($var);
 
-switch ($nama_hari) {
-    case "Sunday":
-        echo "Minggu<br>";
-        echo "Waktu untuk istirahat";
-        break;
-
-    case "Monday":
-        echo "Senin<br>";
-        echo "Meeting awal minggu jam 08.00";
-        break;
-
-    case "Tuesday":
-        echo "Selasa<br>";
-        echo "Pembukaan Workshop Diklat";
-        break;
-
-    case "Wednesday":
-        echo "Rabu<br>";
-        echo "Seminar Launching di JHCC";
-        break;
-
-    case "Thursday":
-        echo "Kamis<br>";
-        echo "Pertemuan dengan Mahasiswa";
-        break;
-
-    case "Friday":
-        echo "Jum'at<br>";
-        echo "Jogging bersama";
-        break;
-
-    case "Saturday":
-        echo "Sabtu<br>";
-        echo "Survey harga ke Dusit, Mangga Dua";
-        break;
-
-    default:
-        echo "Hari tidak diketahui";
-        break;
+if ($scan == false) {
+    $status = "bukan";
+} else {
+    $status = "";
 }
 
+echo "\$var = array(1,2,3,4,5,6,7)";
+echo "<br>";
+echo "Variabel \$var $status merupakan array";
 ?>
 
-</body>
-</html>
+</BODY>
+</HTML>
